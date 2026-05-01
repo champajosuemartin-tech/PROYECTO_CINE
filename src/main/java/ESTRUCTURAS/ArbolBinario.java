@@ -4,7 +4,7 @@ import modelo.Pelicula;
 
 public class ArbolBinario {
 
-    // 🔹 Nodo interno
+    //  Nodo interno
     private class Nodo {
         Pelicula dato;
         Nodo izquierda;
@@ -19,7 +19,7 @@ public class ArbolBinario {
 
     private Nodo raiz;
 
-    // 🔹 INSERTAR
+    //  INSERTAR
     public void insertar(Pelicula dato) {
         raiz = insertarRec(raiz, dato);
     }
@@ -38,7 +38,7 @@ public class ArbolBinario {
         return actual;
     }
 
-    // 🔹 BUSCAR
+    //  BUSCAR
     public Pelicula buscar(int id) {
         return buscarRec(raiz, id);
     }
@@ -59,7 +59,7 @@ public class ArbolBinario {
         }
     }
 
-    // 🔹 RECORRIDOS
+    //  RECORRIDOS
 
     // Inorden (ordenado)
     public void inorden() {

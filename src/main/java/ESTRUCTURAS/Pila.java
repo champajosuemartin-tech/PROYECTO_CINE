@@ -16,14 +16,14 @@ public class Pila {
 
     private Nodo cima;
 
-    // 🔹 PUSH (agregar)
+    //  PUSH (agregar)
     public void push(Reserva dato) {
         Nodo nuevo = new Nodo(dato);
         nuevo.siguiente = cima;
         cima = nuevo;
     }
 
-    // 🔹 POP (eliminar)
+    //  POP (eliminar)
     public Reserva pop() {
         if (cima == null) {
             System.out.println("Pila vacía");
@@ -35,7 +35,7 @@ public class Pila {
         return dato;
     }
 
-    // 🔹 MOSTRAR
+    //  MOSTRAR
     public void mostrar() {
         if (cima == null) {
             System.out.println("Historial vacío");

@@ -16,7 +16,7 @@ public class ListaEnlazada {
       private Nodo cabeza;
  
 
-    // 🔹 INSERTAR (al final)
+    //  INSERTAR (al final)
     public void insertar(Reserva dato) {
         Nodo nuevo = new Nodo(dato);
 
@@ -31,7 +31,7 @@ public class ListaEnlazada {
         }
     }
 
-    // 🔹 RECORRER
+    //  RECORRER
     public void recorrer() {
         if (cabeza == null) {
             System.out.println("Lista vacía");
@@ -46,7 +46,7 @@ public class ListaEnlazada {
         }
     }
 
-    // 🔹 BUSCAR (por DNI del cliente)
+    //  BUSCAR (por DNI del cliente)
     public Reserva buscar(String dni) {
         Nodo actual = cabeza;
 
@@ -61,7 +61,7 @@ public class ListaEnlazada {
         return null;
     }
 
-    // 🔹 ELIMINAR (por DNI)
+    //  ELIMINAR (por DNI)
     public void eliminar(String dni) {
         if (cabeza == null) {
             System.out.println("Lista vacía");

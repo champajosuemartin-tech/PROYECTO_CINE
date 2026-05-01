@@ -17,7 +17,7 @@ public class Cola {
     private Nodo frente;
     private Nodo fin;
 
-    // 🔹 ENQUEUE (agregar)
+    //  ENQUEUE (agregar)
     public void enqueue(Cliente dato) {
         Nodo nuevo = new Nodo(dato);
 
@@ -29,7 +29,7 @@ public class Cola {
         }
     }
 
-    // 🔹 DEQUEUE (eliminar)
+    //  DEQUEUE (eliminar)
     public Cliente dequeue() {
         if (frente == null) {
             System.out.println("Cola vacía");
@@ -46,7 +46,7 @@ public class Cola {
         return dato;
     }
 
-    // 🔹 MOSTRAR
+    //  MOSTRAR
     public void mostrar() {
         if (frente == null) {
             System.out.println("No hay clientes en cola");

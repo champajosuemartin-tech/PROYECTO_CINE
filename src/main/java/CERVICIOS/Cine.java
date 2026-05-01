@@ -13,7 +13,7 @@ public class Cine {
 
     private char[][] sala;
 
-    // 🔹 Constructor
+    // Constructor
     public Cine() {
         arbolPeliculas = new ArbolBinario();
         listaReservas = new ListaEnlazada();
@@ -27,7 +27,7 @@ public class Cine {
         cargarPeliculas();
     }
 
-    // 🔹 Inicializar sala
+    //  Inicializar sala
     private void inicializarSala() {
         for (int i = 0; i < sala.length; i++) {
             for (int j = 0; j < sala[i].length; j++) {
@@ -36,24 +36,24 @@ public class Cine {
         }
     }
 
-    // 🔹 Cargar películas
+    //  Cargar películas
     private void cargarPeliculas() {
         arbolPeliculas.insertar(new Pelicula(10, "Avengers", "8PM", 15));
         arbolPeliculas.insertar(new Pelicula(5, "Batman", "6PM", 12));
         arbolPeliculas.insertar(new Pelicula(20, "Spiderman", "9PM", 18));
     }
 
-    // 🔹 Ver películas
+    //  Ver películas
     public void verPeliculas() {
         arbolPeliculas.inorden();
     }
 
-    // 🔹 Buscar película
+    //  Buscar película
     public Pelicula buscarPelicula(int id) {
         return arbolPeliculas.buscar(id);
     }
 
-    // 🔹 Mostrar sala
+    //  Mostrar sala
     public void mostrarSala() {
         for (int i = 0; i < sala.length; i++) {
             for (int j = 0; j < sala[i].length; j++) {
@@ -63,7 +63,7 @@ public class Cine {
         }
     }
 
-    // 🔹 Reservar asiento
+    //  Reservar asiento
     public void reservar(Cliente cliente, int idPelicula, int fila, int col) {
 
         if (sala[fila][col] == 'X') {
@@ -88,7 +88,7 @@ public class Cine {
         System.out.println("Reserva realizada");
     }
 
-    // 🔹 Comprar entrada
+    //  Comprar entrada
     public void comprar() {
 
         Cliente cliente = colaClientes.dequeue();
@@ -109,12 +109,12 @@ public class Cine {
         }
     }
 
-    // 🔹 Mostrar historial
+    //  Mostrar historial
     public void verHistorial() {
         historial.mostrar();
     }
 
-    // 🔹 Mostrar cola
+    //  Mostrar cola
     public void verCola() {
         colaClientes.mostrar();
     }
