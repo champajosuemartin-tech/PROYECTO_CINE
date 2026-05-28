@@ -60,7 +60,22 @@ public class ListaEnlazada {
 
         return null;
     }
+     // CONTAR reservas almacenadas
+public int contarReservas() {
 
+    int contador = 0;
+
+    Nodo actual = cabeza;
+
+    while (actual != null) {
+
+        contador++;
+
+        actual = actual.siguiente;
+    }
+
+    return contador;
+}
     //  ELIMINAR (por DNI)
     public void eliminar(String dni) {
         if (cabeza == null) {
